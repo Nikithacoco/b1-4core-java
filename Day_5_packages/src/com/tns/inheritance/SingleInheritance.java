@@ -5,7 +5,7 @@ class parent
 	{
 		System.out.print("Hello,this is Nikitha");
 	}
-	}
+}
 
 	class Child extends parent
 	{
