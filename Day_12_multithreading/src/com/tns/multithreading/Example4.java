@@ -1,5 +1,5 @@
 package com.tns.multithreading;
-class Test
+public class Ass
 {
  public static  synchronized void display()
 		    {
