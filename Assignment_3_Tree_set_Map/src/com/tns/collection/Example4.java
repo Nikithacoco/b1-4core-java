@@ -1,15 +1,17 @@
 package com.tns.collection;
-
-import java.util.SortedSet
+import java.util.set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class Example4 {
 
 	public static void main(String[] args) {
-		SortedSet<E> s=new SortedSet();
+		LinkedHashSet s=new LinkedHashSet();
 		s.add(45);
 		s.add(33);
 		s.add(12);
-
+		s.add(52);
+        System.out.println(s);
 	}
 
 }
