@@ -11,7 +11,7 @@ public class CrudDb {
 	public static void main(String[] args) {
 		String dbURL="jdbc:mysql://127.0.0.1:3306/sample";
 		String dbUserName="root";
-		String dbPassword="jenny";
+		String dbPassword="nikithacoco@98";
 		try
 		{
 			Connection c=DriverManager.getConnection(dbURL,dbUserName,dbPassword);
