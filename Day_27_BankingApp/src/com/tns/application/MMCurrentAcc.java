@@ -12,7 +12,8 @@ public class MMCurrentAcc extends CurrentAcc
 	}
 
 	@Override
-	public void withdraw(float charges) {
+	public void withdraw(float CreditLimit) {
+		float CreditLimit1=CreditLimit+CurrentAcc.getAccBal();
 		System.out.println("Account No: "+CurrentAcc.getAccNo()+"\n"+"Account Name: "+CurrentAcc.getAccNm()+"\n"+"Account Balance: "+CurrentAcc.getAccBal()+"\n"+"Credit Limits: "+CurrentAcc.getCreditLimits());
 		
 	}

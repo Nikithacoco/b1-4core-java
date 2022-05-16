@@ -13,9 +13,9 @@ public abstract class BankAcc
 	BankAcc.accNm = accNm;
 	BankAcc.accBal = accBal;
 }
-public abstract void withdraw(float charges);
+public abstract void withdraw(float accBal);
    
-   public abstract void deposite(float charges);
+   public abstract void deposite(float accBal);
 public static int getAccNo() {
 	return accNo;
 }

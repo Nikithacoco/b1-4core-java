@@ -4,7 +4,7 @@ public abstract class CurrentAcc extends BankAcc
 {
 	 private static float CreditLimits;
 	 
-	public CurrentAcc(int accNo,String accNm,float CreditLimit,float accBal) {
+	public CurrentAcc(int accNo,String accNm,float accBal,float CreditLimits) {
 
 		super(accNo,accNm,accBal);
 		CurrentAcc.CreditLimits=CreditLimits;
