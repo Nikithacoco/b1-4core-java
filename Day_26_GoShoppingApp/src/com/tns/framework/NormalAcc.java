@@ -9,13 +9,14 @@ public abstract class NormalAcc extends ShopAcc
 		super(accNo,accNm,charges);
 		NormalAcc.deliveryCharges=deliveryCharges;
 	}
-	public void bookProduct (float deliveryCharges)
-	  {
-		  
-	  }
+
+	public static float getDeliveryCharges() {
+		return deliveryCharges;
+	}
 	@Override
 	public String toString() {
-		return String.format("NormalAcc [deliveryCharge=%s]", deliveryCharges);
-	}
+		return "NormalAcc[getCharges()="+getCharges()+"getDeliveryCharges"+getDeliveryCharges()+",toString()="+super.toString()+"]";
 	 
+}
+	
 }

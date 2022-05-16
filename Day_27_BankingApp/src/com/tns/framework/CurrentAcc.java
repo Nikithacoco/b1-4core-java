@@ -2,26 +2,21 @@ package com.tns.framework;
 
 public abstract class CurrentAcc extends BankAcc
 {
-	 private static float creditLimits;
+	 private static float CreditLimits;
 	 
-	/**
-	 * 
-	 */
-	public CurrentAcc(int accNo,String accNm,float creditLimits, float accBal) {
-		
+	public CurrentAcc(int accNo,String accNm,float CreditLimit,float accBal) {
+
 		super(accNo,accNm,accBal);
-		CurrentAcc.creditLimits=creditLimits;
+		CurrentAcc.CreditLimits=CreditLimits;
 	}
-	public void withdraw (float creditLimits)
-	   { 
-		   
-	   }
+
+	public static float getCreditLimits() {
+		return CreditLimits;
+	}
 	@Override
 	public String toString() {
-		return String.format("CurrentAcc [creditLimits=%s]", creditLimits);
-	}
+		return "CurrentAcc[getaccBal()="+getCreditLimits()+"getCreditLimits"+getCreditLimits()+",toString()="+super.toString()+"]";
+	 
+}
 	
-	}
-	
-
-
+}

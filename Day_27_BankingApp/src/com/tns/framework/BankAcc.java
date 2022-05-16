@@ -3,30 +3,44 @@ package com.tns.framework;
 public abstract class BankAcc 
 {
 
-   private int accNo;
-   private String accNm;
-   private float accBal;
+   private static int accNo;
+   private static String accNm;
+   private static float accBal;
    
    public BankAcc(int accNo, String accNm, float accBal) {
-	super();
-	this.accNo = accNo;
-	this.accNm = accNm;
-	this.accBal = accBal;
+	
+	BankAcc.accNo = accNo;
+	BankAcc.accNm = accNm;
+	BankAcc.accBal = accBal;
 }
-public void withdraw(float charges)
-   {
-	   
-   }
-   public void deposite(float charges)
-   {
-	   
-   }
+public abstract void withdraw(float charges);
+   
+   public abstract void deposite(float charges);
+public static int getAccNo() {
+	return accNo;
+}
+
+public static String getAccNm() {
+	return accNm;
+}
+public static void setAccNm(String accNm) {
+	BankAcc.accNm = accNm;
+}
+public static float getAccBal() {
+	return accBal;
+}
+public static float getAccBals() {
+	return accBal;
+}
 @Override
 public String toString() {
-	return String.format("BankAcc [accNo=%s, accNm=%s, accBal=%s]", accNo, accNm, accBal);
+	return "BankAcc[accNo="+accNo+", accNm="+accNm+", accBal="+accBal+"]";
 }
-
-
-
 }
+   
+
+
+
+
+
    
